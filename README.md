@@ -35,7 +35,7 @@ The dashboard features an interactive 3D globe (centered on India) in a balanced
 ### Installation
 1. Navigate to the frontend directory:
    ```bash
-   cd worldmonitor/worldmonitor-main
+   cd main
    ```
 2. Install dependencies:
    ```bash
