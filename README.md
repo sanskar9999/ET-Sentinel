@@ -29,6 +29,9 @@ The dashboard features an interactive 3D globe (centered on India) in a balanced
 * Central Banks
 * Commodity Hubs and Trade Routes
 
+* Scroll down to view live news or read brief ai insights
+<img width="866" height="931" alt="image" src="https://github.com/user-attachments/assets/04212a6d-b12a-46e8-a81d-44a73301d886" />
+
 ## 🏃‍♂️ How to Run Locally
 
 ### Prerequisites
