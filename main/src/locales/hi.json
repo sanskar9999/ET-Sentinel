@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "ET Sentinel",
+    "description": "AI-संचालित भारतीय व्यापार और समाचार डैशबोर्ड"
+  },
+  "header": {
+    "live": "लाइव",
+    "search": "खोज",
+    "settings": "सेटिंग्स",
+    "sources": "स्रोत",
+    "selectRegion": "क्षेत्र चुनें",
+    "sourceRegionIndia": "भारत"
+  },
+  "panels": {
+    "liveNews": "लाइव समाचार",
+    "markets": "बाजार",
+    "insights": "AI विश्लेषण",
+    "map": "भारत व्यापार मानचित्र",
+    "india-business": "भारत व्यापार",
+    "india-tech": "भारतीय स्टार्टअप एवं तकनीक",
+    "india-policy": "RBI, SEBI एवं नीति",
+    "story-arc": "कारण संबंधी बुद्धिमत्ता (Causal Intelligence)"
+  },
+  "components": {
+    "storyArc": {
+      "title": "कारण संबंधी बुद्धिमत्ता इंजन",
+      "generateDemo": "डेमो आर्क जेनरेट करें",
+      "waiting": "कारण श्रृंखला बनाने के लिए समाचार समूहों की प्रतीक्षा है...",
+      "predicted": "अनुमानित भविष्य",
+      "probability": "संभावना"
+    }
+  }
+}

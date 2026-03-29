@@ -1,0 +1,448 @@
+/* ============================================
+ * ET SENTINEL — Theme Override
+ * Strips WorldMonitor clutter and rebrands for 
+ * Indian Business Intelligence
+ * ============================================ */
+
+/* === HIDE ALL WORLDMONITOR BRANDING & NOISE === */
+
+/* Kill the "Pro is coming" banner at the top */
+[data-variant="et"] .pro-banner,
+[data-variant="et"] [class*="pro-banner"],
+[data-variant="et"] .promo-banner,
+[data-variant="et"] [class*="promo"],
+[data-variant="et"] .announcement-bar,
+[data-variant="et"] [class*="announcement"] {
+  display: none !important;
+}
+
+/* Kill Discord popup / community popup */
+[data-variant="et"] [class*="discord"],
+[data-variant="et"] [class*="community"],
+[data-variant="et"] .community-modal,
+[data-variant="et"] .discord-cta {
+  display: none !important;
+}
+
+/* Hide variant switcher tabs (World/Tech/Finance/Commodity/Happy) */
+[data-variant="et"] .variant-switcher {
+  display: none !important;
+}
+
+/* Hide @eliehabib credit and GitHub link */
+[data-variant="et"] .credit-link,
+[data-variant="et"] .github-link,
+[data-variant="et"] .credit-text {
+  display: none !important;
+}
+
+/* Hide version numbers and beta badges */
+[data-variant="et"] .version,
+[data-variant="et"] .beta-badge {
+  display: none !important;
+}
+
+/* Hide old logo text — we'll replace via ::after */
+[data-variant="et"] .logo {
+  font-size: 0;
+  letter-spacing: 0;
+}
+[data-variant="et"] .logo::after {
+  content: 'ET SENTINEL';
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+[data-variant="et"] .logo-mobile {
+  font-size: 0;
+}
+[data-variant="et"] .logo-mobile::after {
+  content: 'ET Sentinel';
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === SIMPLIFY FOOTER === */
+[data-variant="et"] .site-footer-name {
+  font-size: 0;
+}
+[data-variant="et"] .site-footer-name::after {
+  content: 'ET SENTINEL';
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f97316;
+}
+[data-variant="et"] .site-footer-sub,
+[data-variant="et"] .site-footer-credit {
+  display: none !important;
+}
+[data-variant="et"] .site-footer nav a[href*="worldmonitor"],
+[data-variant="et"] .site-footer nav a[href*="discord"],
+[data-variant="et"] .site-footer nav a[href*="github"],
+[data-variant="et"] .site-footer nav a[href*="status"] {
+  display: none !important;
+}
+[data-variant="et"] .site-footer-copy {
+  font-size: 0;
+}
+[data-variant="et"] .site-footer-copy::after {
+  content: '© 2026 ET Sentinel — AI-Native Business Intelligence';
+  font-size: 10px;
+  color: #606070;
+}
+
+/* === MOBILE MENU CLEANUP === */
+[data-variant="et"] .mobile-menu-title {
+  font-size: 0;
+}
+[data-variant="et"] .mobile-menu-title::after {
+  content: 'ET SENTINEL';
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* Hide variant switching in mobile menu */
+[data-variant="et"] .mobile-menu-variant {
+  display: none !important;
+}
+/* Hide mobile menu footer links to old project */
+[data-variant="et"] .mobile-menu-footer-links a[href*="worldmonitor"],
+[data-variant="et"] .mobile-menu-footer-links a[href*="discord"] {
+  display: none !important;
+}
+/* Hide @eliehabib in mobile menu */
+[data-variant="et"] .mobile-menu-item[href*="eliehabib"] {
+  display: none !important;
+}
+
+/* === MAP PANEL TITLE === */
+[data-variant="et"] .map-section .panel-title {
+  font-size: 0;
+}
+[data-variant="et"] .map-section .panel-title::after {
+  content: 'India Business Map';
+  font-size: 12px;
+  font-weight: 600;
+  color: #f97316;
+  letter-spacing: 0.03em;
+}
+
+/* === ORANGE ACCENT THEME === */
+
+/* Header bar accent */
+[data-variant="et"] .header {
+  border-bottom-color: rgba(249, 115, 22, 0.15);
+}
+
+/* LIVE indicator becomes orange */
+[data-variant="et"] .status-dot {
+  background: #f97316 !important;
+  box-shadow: 0 0 6px rgba(249, 115, 22, 0.5) !important;
+}
+
+[data-variant="et"] .status-indicator span:not(.status-dot) {
+  color: #f97316 !important;
+}
+
+/* Search button */
+[data-variant="et"] .search-btn {
+  border-color: rgba(249, 115, 22, 0.2);
+}
+[data-variant="et"] .search-btn:hover {
+  border-color: rgba(249, 115, 22, 0.4);
+  background: rgba(249, 115, 22, 0.05);
+}
+
+/* Panel title accents */
+[data-variant="et"] .panel-header {
+  border-bottom-color: rgba(249, 115, 22, 0.08);
+}
+
+/* Panel close button hover */
+[data-variant="et"] .panel-close-btn:hover {
+  color: #f97316;
+}
+
+/* Scrollbar */
+[data-variant="et"] ::-webkit-scrollbar-thumb {
+  background: rgba(249, 115, 22, 0.2);
+}
+[data-variant="et"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(249, 115, 22, 0.4);
+}
+
+/* === GLOBAL SITUATION HEADER === */
+[data-variant="et"] .global-situation,
+[data-variant="et"] [class*="global-situation"] {
+  display: none;
+}
+
+/* === PRO/PREMIUM BADGES — HIDE === */
+[data-variant="et"] .panel-pro-badge,
+[data-variant="et"] [class*="premium"],
+[data-variant="et"] .pro-badge {
+  display: none !important;
+}
+
+/* === LOADING/RADAR ANIMATION — orange accent === */
+[data-variant="et"] .panel-radar-sweep {
+  background: conic-gradient(transparent, rgba(249, 115, 22, 0.3)) !important;
+}
+[data-variant="et"] .panel-radar-dot {
+  background: #f97316 !important;
+}
+
+/* === MAP DIMENSION TOGGLE — orange active === */
+[data-variant="et"] .map-dim-btn.active {
+  background: rgba(249, 115, 22, 0.15) !important;
+  color: #f97316 !important;
+}
+
+/* === HAMBURGER/SETTINGS BUTTON HOVER === */
+[data-variant="et"] .hamburger-btn:hover,
+[data-variant="et"] .mobile-settings-btn:hover {
+  color: #f97316;
+}
+
+/* === SUBTLE HEADER GLOW === */
+[data-variant="et"] .header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.3), transparent);
+}
+
+/* === HIDE COPY LINK BUTTON (not useful for our prototype) === */
+[data-variant="et"] .copy-link-btn {
+  display: none !important;
+}
+
+/* === REGION SELECTOR — add India option styling === */
+[data-variant="et"] .region-select option[value="asia"] {
+  font-weight: bold;
+}
+
+/* === HIDE MAP LAYERS SIDEBAR (the military/nuclear/intel toggles) === */
+[data-variant="et"] .deckgl-layer-toggles,
+[data-variant="et"] .layer-toggles {
+  display: none !important;
+}
+
+/* === HIDE "GLOBAL SITUATION" subtitle === */
+[data-variant="et"] .global-situation-label {
+  display: none !important;
+}
+
+/* === HIDE MAP LEGEND (original worldmonitor legend) === */
+[data-variant="et"] .map-legend {
+  display: none !important;
+}
+
+/* === HIDE the fullscreen & pin map buttons (clutter for prototype) === */
+[data-variant="et"] .map-pin-btn,
+[data-variant="et"] #mapPinBtn {
+  display: none !important;
+}
+
+/* === HIDE FOOTER ICON (worldmonitor favicon) === */
+[data-variant="et"] .site-footer-icon {
+  display: none !important;
+}
+
+/* === HIDE all footer nav links (clean footer) === */
+[data-variant="et"] .site-footer nav {
+  display: none !important;
+}
+
+/* === HIDE BREAKING NEWS BANNER (from WorldMonitor military alerts) === */
+[data-variant="et"] .critical-posture-banner,
+[data-variant="et"] [class*="critical-posture"] {
+  display: none !important;
+}
+
+/* === HIDE INTELLIGENCE GAP BADGE (military indicator) === */
+[data-variant="et"] .intelligence-gap-badge,
+[data-variant="et"] [class*="intelligence-gap"],
+[data-variant="et"] .findings-badge,
+[data-variant="et"] .intel-findings-badge {
+  display: none !important;
+}
+
+/* === HIDE PizzInt indicator (geopolitical tension meter) === */
+[data-variant="et"] .pizzint-indicator,
+[data-variant="et"] [class*="pizzint"] {
+  display: none !important;
+}
+
+/* === HIDE LLM status indicator (internal tool) === */
+[data-variant="et"] .llm-status-indicator,
+[data-variant="et"] [class*="llm-status"] {
+  display: none !important;
+}
+
+/* === PANEL COUNT BADGE — orange accent === */
+[data-variant="et"] .panel-count {
+  background: rgba(249, 115, 22, 0.15) !important;
+  color: #f97316 !important;
+}
+
+/* === NEWS PANEL SOURCE BADGES — orange highlight for Indian sources === */
+[data-variant="et"] .panel-data-badge.live {
+  background: rgba(249, 115, 22, 0.12) !important;
+  color: #f97316 !important;
+  border-color: rgba(249, 115, 22, 0.25) !important;
+}
+
+/* === MAP TITLE - "GLOBAL SITUATION" becomes "INDIA BUSINESS MAP" === */
+[data-variant="et"] .map-section .panel-header-left {
+  position: relative;
+}
+
+/* === HIDE SETTINGS COGS and auth widget in header === */
+[data-variant="et"] #unifiedSettingsMount,
+[data-variant="et"] #authWidgetMount,
+[data-variant="et"] .fullscreen-btn {
+  display: none !important;
+}
+
+/* === HIDE the search KB shortcut indicator === */
+[data-variant="et"] .search-btn kbd {
+  display: none;
+}
+
+/* === PANEL NEW BADGE — orange === */
+[data-variant="et"] .panel-new-badge {
+  background: #f97316 !important;
+}
+
+/* === MAP NEWS FLASH DOT — orange === */
+[data-variant="et"] .news-flash-dot {
+  background: #f97316 !important;
+  box-shadow: 0 0 8px rgba(249, 115, 22, 0.6) !important;
+}
+
+/* === MAKE THE HEADER MORE PREMIUM === */
+[data-variant="et"] .header {
+  background: rgba(12, 12, 18, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+/* === HIDE the hamburger on desktop (no mobile menu needed for prototype) === */
+@media (min-width: 769px) {
+  [data-variant="et"] .hamburger-btn {
+    display: none !important;
+  }
+}
+
+/* === FOOTER - minimal clean === */
+[data-variant="et"] .site-footer {
+  border-top-color: rgba(249, 115, 22, 0.1) !important;
+}
+
+/* === HIDE PRO BADGE on panels (purple pill) === */
+[data-variant="et"] .panel-pro-badge,
+[data-variant="et"] [class*="pro-badge"],
+[data-variant="et"] .pro-badge-pill {
+  display: none !important;
+}
+
+/* === HIDE notification error counter in header === */
+[data-variant="et"] .error-count-badge,
+[data-variant="et"] [class*="error-count"],
+[data-variant="et"] .header-right .notification-badge {
+  display: none !important;
+}
+
+/* === Style UNAVAILABLE badges — softer, orange-tinted === */
+[data-variant="et"] .panel-unavailable-badge,
+[data-variant="et"] [class*="unavailable"] {
+  background: rgba(249, 115, 22, 0.15) !important;
+  color: #f97316 !important;
+  border-color: rgba(249, 115, 22, 0.25) !important;
+}
+
+/* === HIDE the "DROP PANELS HERE TO MOVE THEM BELOW THE MAP" zone === */
+[data-variant="et"] .map-bottom-grid {
+  display: none !important;
+}
+
+/* === HIDE the map resize handle === */
+[data-variant="et"] .map-resize-handle {
+  display: none !important;
+}
+
+/* === HIDE the fullscreen expand button on panels === */
+[data-variant="et"] .panel-expand-btn,
+[data-variant="et"] [class*="expand-btn"] {
+  display: none !important;
+}
+
+/* === LIVE NEWS panel — hide the settings gear === */
+[data-variant="et"] .live-news-settings-btn {
+  display: none !important;
+}
+
+/* === REGION SELECTOR — default to Asia for visual consistency === */
+[data-variant="et"] .region-select {
+  color: #f97316;
+  border-color: rgba(249, 115, 22, 0.2);
+}
+[data-variant="et"] .region-select:focus {
+  border-color: rgba(249, 115, 22, 0.4);
+}
+
+/* === PANEL WIDE SUPPORT === */
+[data-variant="et"] .panel-wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 1200px) {
+  [data-variant="et"] .panel-wide {
+    grid-column: span 1;
+  }
+}
+
+/* === CAUSAL PANEL HEIGHT INCREASE — Fill right side === */
+[data-variant="et"] .story-arc-panel {
+  height: calc(100vh - 110px);
+  min-height: 600px;
+  grid-row: span 8;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === HEADER CLOCKS — Side-by-side fix === */
+[data-variant="et"] .header-clock-wrap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+[data-variant="et"] .header-clock {
+  position: static !important;
+  transform: none !important;
+  left: auto !important;
+  white-space: nowrap;
+}
+
+
