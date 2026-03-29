@@ -2,7 +2,8 @@
 **Theme 8: AI-Native News Experience (ET Gen AI Hackathon)**
 *Business News in 2026, Reimagined.*
 
-![ET Sentinel Dashboard Overview](./paper/dashboard_verification_1774726670514.png)
+<img width="1769" height="887" alt="image" src="https://github.com/user-attachments/assets/f2c7aef3-2537-45e5-99b0-33704de7e246" />
+
 
 ## 🛑 The Problem: The End of the Static Article
 Business news today is still delivered like it's 2005—static text articles, one-size-fits-all homepages, and a rigid format. Readers are forced to piece together complex macroeconomic shifts and policy changes from disjointed headlines. Connecting the dots between local regulations and global supply chain disruptions is left entirely to the user.
