@@ -13,6 +13,7 @@ The **ET Sentinel** breaks the static news mold. We built a platform that replac
 
 ## 🧠 Core Feature: The Causal Intelligence Engine (Story Arc Tracker)
 At the heart of the ET Sentinel lies the **Causal Intelligence Engine**. Instead of isolated articles, we present the interactive **Story Arc Tracker**. 
+<img width="1639" height="779" alt="image" src="https://github.com/user-attachments/assets/aae2fd31-8674-4c10-9e33-db45052b3313" />
 
 When a sudden commodity price shock hits or a new RBI policy is introduced, our engine builds a complete, interactive visual narrative:
 * **Chronological Event Chains:** Maps out cause-and-effect links based on real-time news data.
@@ -20,6 +21,8 @@ When a sudden commodity price shock hits or a new RBI policy is introduced, our 
 * **Probability Forecasting:** Using the Groq LLM API, the engine generates *predictive timelines*, exploring probability-weighted "what to watch next" scenarios.
 
 ## 🌍 Immersive 3D Visualization
+<img width="805" height="888" alt="image" src="https://github.com/user-attachments/assets/344c77e4-413f-4e5c-be3b-f1bb88db794a" />
+
 The dashboard features an interactive 3D globe (centered on India) in a balanced 50/50 split with the intelligence feeds. It visually tracks:
 * Financial Hubs
 * Stock Exchanges (BSE/NSE)
