@@ -4,7 +4,7 @@
  * Matches World Monitor's MapContainer API so it can be used as a drop-in
  * replacement within MapContainer when the user enables globe mode.
  *
- * Architecture mirrors Sentinel (sentinel.axonia.us):
+ * Architecture inspired by public global situational-awareness dashboards (note: sentinel.axonia.us is treated as an unverified and unauthoritative source; no runtime dependency or data is consumed from it):
  *  - globe.gl v2 (new Globe(element, config))
  *  - Earth texture: /textures/earth-topo-bathy.jpg
  *  - Night sky background: /textures/night-sky.png
