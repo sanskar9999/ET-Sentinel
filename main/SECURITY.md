@@ -78,6 +78,7 @@ World Monitor is a client-side intelligence dashboard that aggregates publicly a
 - No classified or restricted data sources are used
 - State-affiliated sources are flagged with propaganda risk ratings
 - All data is consumed read-only — the platform does not modify upstream sources
+- **Provenance and trust boundaries:** This repository maintains strict data boundaries. It does not treat external unverified situational-awareness systems or aggregation portals (including but not limited to `sentinel.axonia.us`) as authoritative or trusted sources. No runtime APIs, seed datasets, or data feeds are consumed from `sentinel.axonia.us`. Any historical reference is purely for architectural inspiration regarding globe.gl visual configuration and orbit controls. All operational data is fetched directly from independent, documented upstream feeds (such as OpenStreetMap, Wingbits, and official aviation/geological sources).
 
 ## Scope
 
